@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Script</title>
+        <script>
+            var count= 0, message= "";
+        </script>
+    </head>
+    <body>
+        <img class= "image" src= "image/ball.png"
+        onclick= "count ++;
+        if(count === 1)
+        {message='Этого недостаточно. Вы нажали только один раз.';}
+        else if(count >= 2 && count <= 10)
+        {message= 'Вы нажали ' + count + ' раз. Можно больше';}
+        else
+        {message= 'Браво!Вы были настойчивы,чтобы нажать ' + count+ ' раз.';}
+        document.getElementById('rez').innerHTML= message;"> 
+        <p> Нажмите на изображение. </p>
+        <p id= "rez"></p>     
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+    </head>        
+<body>
+    <div class="container">
+        <p class= "text"> Попробуйте угадать число от 1 до 77,которое я задумал...<br>
+            Панель, расположенная ниже, поможет вам...</p>
+        <div class= "block">
+        <input type= "text" id= "text"/>
+        <button class= "button" onclick="вводиЧисло()";> Проверить
+        </button>
+        </div>
+        <p id= "rez2"></p>
+        <input type= "range" id= "nr" min= "1" max= "77" class= "myRange" oninput= "ловиЧисло()">
+        <p id= "gen"></p>
+        <p id= "rez1"></p>
+        <div class= "block">
+            <button class= "buttonRestart" onclick= "restart();"> Обновить игру!</button>
+        </div>
+    </div>
+    <script src= "tasks3.js"></script>
+</body>
+</html>
